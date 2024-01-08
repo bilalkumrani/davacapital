@@ -1,0 +1,80 @@
+.outerContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ecefe8;
+}
+.circle{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: #ecefe8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+
+  
+}
+.rotatediv{
+    width: 270px;
+    height: 270px;
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    border-radius: 50%;
+border: 4px dashed rgb(86, 92, 80);
+}
+// .rotatediv {
+//     width: 270px;
+//     height: 270px;
+//     position: absolute;
+//     animation-name: rotate;
+//     animation-duration: 12s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+//     border-radius: 50%;
+//   }
+  
+//   .line1 {
+//     position: absolute;
+//     width: 5%;
+//     height: 5px; /* Adjust height as needed */
+//     background-color: green;
+//     top: 60%;
+//   }
+  
+//   .line2 {
+//     position: absolute;
+//     width: 5%;
+//     height: 5px; 
+//     background-color: red;
+//     top: 63%;
+//   }
+  
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+.splashimage{
+    position: absolute;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+  
+    object-fit:cover;
+}
+.buttonText{
+    color: rgb(111 118 126);
+    cursor: pointer;
+    margin-top: 155px;
+}
