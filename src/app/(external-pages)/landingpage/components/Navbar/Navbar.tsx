@@ -4,6 +4,8 @@ import Tabs from '@/components/common/Tabs/Tabs';
 import './style.scss';
 import { motion } from "framer-motion";
 import logo from '../../../../../../public/Logo Main.png'
+import { useRouter } from 'next/navigation';
+
 
 interface NavbarProps {
   isMenuOpen: boolean;
@@ -11,8 +13,9 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => {
-    const tabs = ['Home', 'Contact', 'Team','Terms of Services',];
+    const tabs = ['Home','Team','Terms of Services',"About", "Contact"];
     const [activeTab, setActiveTab] = useState('Home');
+    const router = useRouter();
    
 
     const handleMenuToggle = () => {
@@ -27,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => {
         visible: {
           opacity: 1,
           transition: {
-            delay: 0.5,
+            delay: 0.2,
           },
         },
       };
@@ -65,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => {
           initial="hidden"
           animate="visible" className='desktopNav'>
           <div className='desktopNav-logo'>
-            <img src={logo.src} width={50}/>
+            <img src={logo.src} width={70}/>
           </div>
     
           <div className='desktopNav-tabsContainer'>
