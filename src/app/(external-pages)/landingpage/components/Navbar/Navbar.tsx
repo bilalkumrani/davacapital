@@ -13,7 +13,9 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => {
-    const tabs = ['Home','Team','Terms of Services',"About", "Contact"];
+    // const tabs = ['Home','Team','Terms of Services',"About", "Contact"];    const tabs = ['Home','Team','Terms of Services',"About", "Contact"];
+    const tabs = [""];
+
     const [activeTab, setActiveTab] = useState('Home');
     const router = useRouter();
    
@@ -68,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => {
           initial="hidden"
           animate="visible" className='desktopNav'>
           <div className='desktopNav-logo'>
-            <img src={logo.src} width={70}/>
+            <img src={logo.src} width={95}/>
           </div>
     
           <div className='desktopNav-tabsContainer'>

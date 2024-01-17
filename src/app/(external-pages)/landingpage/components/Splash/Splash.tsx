@@ -64,7 +64,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onEnterButtonClick }) => {
         whileTap={{ scale: 0.9 }}
         className="buttonText"
       >
-        Click To Enter
+        Enter
       </motion.p>
     </motion.div>
   );
