@@ -13,8 +13,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu }) => {
-    // const tabs = ['Home','Team','Terms of Services',"About", "Contact"];    const tabs = ['Home','Team','Terms of Services',"About", "Contact"];
-    const tabs = [""];
+    // const tabs = ['Home','Team','Terms of Services',"About", "Contact"];    
+    const tabs = ["About", ];
 
     const [activeTab, setActiveTab] = useState('Home');
     const router = useRouter();
